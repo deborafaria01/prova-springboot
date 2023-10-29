@@ -8,7 +8,7 @@ public interface ITurmaService {
     
     public Turma novaTurma(Turma turma);
     
-   // public List<Turma> buscarTodas();
+   public List<Turma> buscarTodas();
 
-   // public List<Turma> buscarPorRangeDeAno(Integer anoInicio, Integer anoFim);
+     public List<Turma> buscarPorRangeDeAno(Integer anoInicio, Integer anoFim);
 }
