@@ -9,8 +9,8 @@ import br.gov.sp.fatec.provaspringboot.entity.Turma;
 
 public interface TurmaRepository extends JpaRepository<Turma, Long> {
 
-   @Query("SELECT u FROM Turma u WHERE u.ano BETWEEN :anoInicio AND :anoFim")
-    public List<Turma> findByYearRange(@Param("anoInicio") Integer anoInicio, @Param("anoFim") Integer anoFim);
+   @Query("SELECT u FROM Turma u WHERE u.ano = :ano AND u.tamanho < :tamanho")
+    public List<Turma> findByYearRange(@Param("ano") Integer ano, @Param("tamanho") Integer tamanho);
 
     
 }

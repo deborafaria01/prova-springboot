@@ -27,8 +27,8 @@ public class TurmaService implements ITurmaService {
         return turmaRepo.save(turma);
     }
     
-   public List<Turma> buscarPorRangeDeAno(Integer anoInicio, Integer anoFim) {
-    return turmaRepo.findByYearRange(anoInicio, anoFim);
+   public List<Turma> buscarPorRangeDeAno(Integer ano, Integer tamanho) {
+    return turmaRepo.findByYearRange(ano, tamanho);
 
    }
         

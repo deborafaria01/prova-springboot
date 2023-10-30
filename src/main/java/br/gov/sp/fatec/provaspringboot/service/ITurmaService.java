@@ -10,5 +10,5 @@ public interface ITurmaService {
     
    public List<Turma> buscarTodas();
 
-     public List<Turma> buscarPorRangeDeAno(Integer anoInicio, Integer anoFim);
+     public List<Turma> buscarPorRangeDeAno(Integer ano, Integer tamanho);
 }

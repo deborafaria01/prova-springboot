@@ -18,17 +18,21 @@ public class Turma {
     @Column(name = "trm_id")
     private Long id;
 
-    @Column(name = "trm_data_hora_cadastro", nullable = false)
+    @Column(name = "trm_data_hora_cadastro")
     private LocalDateTime dataHoraCadastro;
 
-    @Column(name = "trm_ano", nullable = false)
+    @Column(name = "trm_ano")
     private Integer ano;
 
-    @Column(name = "trm_semestre", nullable = false)
+    @Column(name = "trm_semestre")
     private Integer semestre;
 
     @Column(name = "trm_tamanho")
     private Integer tamanho;
+
+    public Turma (){
+
+    }
 
     public Long getId() {
         return id;
